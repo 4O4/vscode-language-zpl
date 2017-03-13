@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>fileTypes</key>
+  <array>
+    <string>zpl</string>
+  </array>
+  <key>name</key>
+  <string>ZPL</string>
+  <key>patterns</key>
+  <array>
+    <dict>
+      <key>comment</key>
+      <string>flow control operators</string>
+      <key>match</key>
+      <string>\b(IF|THEN|ELSE|NOT|AND|OR|DO|FOR|WHILE|LOOP|UNTIL|TO|GOTO|GOSUB|SUB|EXIT|END)\b</string>
+      <key>name</key>
+      <string>keyword.control</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>(?i)(\^FN[0-9]*)</string>
+      <key>name</key>
+      <string>variable</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>(\^DFR:[^\^]*|\^XFR:[^\^]*|\^ISR:[^\^]*|\^ILR:[^\^]*)</string>
+      <key>name</key>
+      <string>keyword.template</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string><![CDATA[(?<=\^FD).+(?=\^FS)]]></string>
+      <key>name</key>
+      <string>string</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>(?i)(\^.{2})</string>
+      <key>name</key>
+      <string>support.function.construct</string>
+    </dict>
+  </array>
+  <key>scopeName</key>
+  <string>source.iso6983</string>
+  <key>uuid</key>
+  <string>4063C82B-38F8-4E0A-97D2-DC998B641F6F</string>
+</dict>
+</plist>

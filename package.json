@@ -1,0 +1,26 @@
+{
+    "name": "language-zpl",
+    "displayName": "ZPL",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "4O4",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "zpl",
+            "aliases": ["ZPL", "zpl"],
+            "extensions": [".zpl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "zpl",
+            "scopeName": "source.iso6983",
+            "path": "./syntaxes/iso6983.tmLanguage"
+        }]
+    }
+}
